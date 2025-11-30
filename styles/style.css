@@ -267,7 +267,7 @@ section:last-of-type {
   }
 
   main {
-    padding: 63px 20px 60px 20px;
+    padding: 63px 20px 20px;
   }
 
   section {
@@ -382,11 +382,16 @@ section:last-of-type {
 
   .section-attention {
     grid-template-columns: 350px 1fr;
+    margin-bottom: 60px;
   }
 
   .section-attention .card {
     grid-template-rows: min-content 1fr;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .how-to-concentrate {
+    grid-template-columns: 315px 1fr;
   }
 
   .multi {
