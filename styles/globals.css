@@ -46,10 +46,3 @@ button:focus,
 a:focus {
   outline: none;
 }
-
-main {
-  padding: 10px;
-}
-section {
-  margin-top: 40px;
-}
