@@ -1,89 +1,13 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
-/* Цветовые настройки темной темы */
-.page {
-  background-image: var(--bg-image);
-  background-color: var(--bg-color);
-  color: var(--text-color);
-}
-
-a {
-  color: var(--text-color);
-  text-shadow: 2px 2px var(--accent-color);
-}
-
-main {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-}
-
-.decorated-zone::after {
-  border-top: 1px solid var(--accent-color);
-  border-right: 1px solid var(--accent-color);
-}
-
-.decorated-zone::before {
-  border-bottom: 1px solid var(--accent-color);
-  border-left: 1px solid var(--accent-color);
-}
-
-.header__logo {
-  color: var(--accent-color);
-}
-
-.header__logo::after {
-  background-color: var(--decor-color);
-  color: var(--decor-color);
-}
-
-.header__theme-menu {
-  color: var(--menu-color);
-}
-
-.header__theme-menu-button_active {
-  border: 1px solid var(--border-menu);
-  pointer-events: none;
-}
-
-.header__title {
-  color: var(--title-color);
-  text-shadow: 4px 4px var(--accent-color);
-}
-
-.header__description {
-  color: var(--text-color);
-}
-
-.title-decor {
-  background-color: var(--accent-color);
-}
-
-.card-title {
-  color: var(--head-color);
-}
-
-.card-subtitle {
-  color: var(--subtitle-color);
-}
-
-.card-subtitle-regular {
-  color: var(--subtitle-regular);
-}
-
-.footer {
-  background-color: var(--bg-color);
-}
-
-.footer-logo {
-  color: var(--title-color);
-  text-shadow: 4px 4px var(--accent-color);
-}
-/* Цветовые настройки темной темы */
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
+  background-image: var(--bg-image);
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 a {
@@ -124,6 +48,8 @@ a:focus-visible {
   right: 10px;
   width: 25px;
   height: 25px;
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
 }
 
 .decorated-zone::before {
@@ -133,6 +59,8 @@ a:focus-visible {
   left: 10px;
   width: 25px;
   height: 25px;
+  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
 }
 
 .header__logo {
@@ -145,6 +73,7 @@ a:focus-visible {
   justify-self: end;
   font-family: inherit;
   font-size: 18px;
+  color: var(--accent-color);
 }
 
 .header__logo::after {
@@ -153,12 +82,15 @@ a:focus-visible {
   width: 9px;
   height: 9px;
   border-radius: 50%;
+  background-color: var(--decor-color);
+  color: var(--decor-color);
 }
 
 .header__theme-menu {
   justify-self: end;
   align-self: start;
   margin-top: 60px;
+  color: var(--menu-color);
 }
 
 .header__theme-menu-list {
@@ -175,6 +107,10 @@ a:focus-visible {
   cursor: pointer;
   text-transform: lowercase;
 }
+.header__theme-menu-button_active {
+  border: 1px solid var(--border-menu);
+  pointer-events: none;
+}
 
 .header__title {
   font-family: var(--font-family), sans-serif;
@@ -182,6 +118,8 @@ a:focus-visible {
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   margin-top: 20px;
   line-height: 83%;
+  color: var(--title-color);
+  text-shadow: 4px 4px var(--accent-color);
 }
 
 .header__description {
@@ -191,13 +129,24 @@ a:focus-visible {
   font-size: 18px;
   align-self: end;
   max-height: min-content;
+  color: var(--text-color);
+}
+.title-decor {
+  background-color: var(--accent-color);
 }
 
 main {
-  padding: 40px 10px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding: 40px 10px 0 10px;
 }
 section {
   margin-bottom: 50px;
+}
+
+section:last-of-type {
+  margin-bottom: 0;
+  padding-bottom: 40px;
 }
 
 .card {
@@ -211,6 +160,7 @@ section {
   font-weight: 700;
   line-height: 23.4px;
   margin-bottom: 20px;
+  color: var(--head-color);
 }
 
 .card-subtitle {
@@ -219,6 +169,7 @@ section {
   line-height: 23.4px;
   font-weight: 700;
   margin-bottom: 10px;
+  color: var(--subtitle-color);
 }
 
 .card-text {
@@ -228,16 +179,25 @@ section {
   line-height: 23.4px;
 }
 
+.how-to-concentrate .card-subtitle {
+  margin-bottom: 0;
+}
+
 .card-subtitle-regular {
   font-size: 18px;
   line-height: 23.4px;
   font-weight: 400;
   margin-bottom: 10px;
+  color: var(--subtitle-regular);
 }
 
 .section-gallery {
   display: grid;
   gap: 10px;
+}
+
+.section-gallery .card-subtitle {
+  margin-bottom: 0;
 }
 
 .section-gallery__images {
@@ -252,6 +212,7 @@ section {
   align-items: center;
   justify-content: center;
   position: relative;
+  background-color: var(--bg-color);
 }
 
 .footer-logo {
@@ -259,6 +220,8 @@ section {
   font-weight: 700;
   font-size: var(--font-size-mobile);
   line-height: 23.4px;
+  color: var(--title-color);
+  text-shadow: 4px 4px var(--accent-color);
 }
 
 @media (width >= 768px) {
@@ -304,7 +267,7 @@ section {
   }
 
   main {
-    padding: 40px 20px 60px 20px;
+    padding: 63px 20px 60px 20px;
   }
 
   section {
@@ -382,7 +345,7 @@ section {
 @media (width >= 1024px) {
   .header {
     min-height: 768px;
-    grid-template-columns: 1fr minmax(236px, 500px);
+    grid-template-columns: 1fr minmax(236px, 490px);
   }
   .header__theme-menu {
     grid-column: 1 / span 2;
