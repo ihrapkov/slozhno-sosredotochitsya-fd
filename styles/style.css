@@ -180,7 +180,7 @@ link:focus-visible {
   line-height: 23.4px;
 }
 
-.how-to-concentrate .card-subtitle {
+.margin {
   margin-bottom: 0;
 }
 
@@ -267,7 +267,7 @@ link:focus-visible {
     margin-top: 25px;
   }
 
-  main {
+  .page main {
     padding: 63px 20px 20px;
   }
 
@@ -362,6 +362,10 @@ link:focus-visible {
   .section-attention .card-title {
     grid-row: 1;
     grid-column: 1 / 2;
+  }
+
+  .section-attention .card {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .section-gallery {
