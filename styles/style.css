@@ -25,7 +25,7 @@
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid var(--hover--menu);
+  border: 1px solid var(--hover-menu);
 }
 
 .header__theme-menu-button:focus-visible {
