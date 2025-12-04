@@ -18,9 +18,12 @@
   --title-color: #db00ff;
   --menu-color: var(--accent-color);
   --border-menu: var(--accent-color);
+  --hover-menu: rgba(100%, 0%, 44%, 0.4);
   --decor-color: var(--accent-color);
   --head-color: var(--accent-color);
   --subtitle-color: var(--bg-color);
   --subtitle-regular: var(--bg-color);
   --focus-color: var(--accent-color);
+  --hover-link: var(--text-color);
+  --display-logo: flex;
 }

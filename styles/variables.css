@@ -23,4 +23,5 @@
   --subtitle-regular: var(--bg-color);
   --focus-color: var(--accent-color);
   --hover-menu: rgba(100%, 0%, 44%, 0.4);
+  --hover-link: var(--text-color);
 }

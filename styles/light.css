@@ -24,6 +24,7 @@
   --subtitle-regular: var(--text-color);
   --focus-color: var(--text-color);
   --hover-menu: rgb(20%, 19%, 18%, 0.4);
+  --hover-link: var(--text-color);
 }
 
 @media (prefers-color-scheme: light) {
@@ -43,5 +44,6 @@
     --subtitle-regular: var(--text-color);
     --focus-color: var(--text-color);
     --hover-menu: rgb(20%, 19%, 18%, 0.4);
+    --hover-link: var(--text-color);
   }
 }
